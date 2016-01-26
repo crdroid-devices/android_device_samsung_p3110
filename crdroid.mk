@@ -23,7 +23,7 @@ TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 600
 
 # Inherit common CM configuration
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/crdroid/config/common_full_tablet_wifionly.mk)
 
 # CyanogenMod specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/cm-common
@@ -32,7 +32,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/cm-common
 $(call inherit-product, device/samsung/p3110/aosp_p3110.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_p3110
+PRODUCT_NAME := crdroid_p3110
 
 # Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += \
